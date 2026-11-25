@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Piscigranja municipal de Río Negro | Maqueta 3D</title><meta name="description" content="Maqueta interactiva e investigación documental sobre la piscigranja municipal de Río Negro, Satipo, Junín."><style>:root{color-scheme:dark;--bg:#091b18;--paper:#102822;--line:#355447;--mint:#9df4bc;--text:#f1f9ee;--muted:#b8cec1}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 76% 13%,#163b2d,transparent 40rem),var(--bg);color:var(--text);font:1rem/1.55 system-ui,sans-serif}header,main,footer{width:min(1260px,calc(100% - 44px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:21px 0}header a{text-decoration:none;color:var(--text);font-weight:700}header span{color:var(--muted);font-size:.82rem}nav{display:flex;gap:20px}.intro{padding:42px 0 25px}.kicker{color:var(--mint);letter-spacing:.17em;font-size:.82rem;font-weight:800;margin:0 0 12px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.65rem,7vw,6rem);line-height:.97;letter-spacing:-.075em;margin-bottom:20px}.lead{color:var(--muted);font-size:clamp(1rem,2vw,1.19rem);max-width:650px;margin-bottom:0}.viewer{display:grid;grid-template-columns:minmax(0,2.25fr) minmax(250px,1fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--paper)}.stage{min-width:0;background:radial-gradient(ellipse,#23493c,#102a25);position:relative}canvas{display:block;width:100%;height:clamp(320px,46vw,560px);touch-action:pan-y;cursor:grab}canvas:active{cursor:grabbing}.caption{position:absolute;left:18px;bottom:12px;margin:0;background:#091b18e8;padding:5px 12px;border-radius:30px;color:var(--mint);font-size:.85rem;pointer-events:none}aside{padding:24px;border-left:1px solid var(--line)}aside h2{font-size:1.45rem;margin-bottom:4px}aside p,#detail{color:var(--muted)}.controls{display:flex;gap:6px;flex-wrap:wrap}.zones{display:grid;gap:7px;margin:24px 0 16px}button{font:inherit;cursor:pointer;background:#17382d;color:var(--text);border:1px solid #4b6a5b;border-radius:8px;padding:5px 10px}button:hover,button[aria-pressed=true]{background:var(--mint);color:var(--bg)}.zones button{text-align:left;padding:8px 12px}a:focus-visible,button:focus-visible{outline:2px solid var(--mint);outline-offset:3px}.report{padding:56px 0 36px}.report h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.045em;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}article{border:1px solid var(--line);border-radius:15px;padding:20px;background:var(--paper)}article h3{margin-bottom:8px}article p{color:var(--muted)}article a{color:var(--mint);text-underline-offset:4px}footer{padding:20px 0 35px;color:var(--muted);border-top:1px solid var(--line)}@media(max-width:780px){.viewer{grid-template-columns:1fr}aside{border-left:0;border-top:1px solid var(--line)}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){header,main,footer{width:calc(100% - 28px)}header span{display:none}.grid{grid-template-columns:1fr}.intro{padding-top:31px}}</style></head>
+<body><header><a href="#inicio">RÍO NEGRO <span> / SATIPO, JUNÍN</span></a><nav><a href="#maqueta">Maqueta</a><a href="#fuentes">Investigación</a></nav></header>
+<main id="inicio"><section class="intro"><p class="kicker">ACUICULTURA EN LA SELVA CENTRAL</p><h1>Piscigranja municipal<br>de Río Negro</h1><p class="lead">Explora una maqueta 3D de los estanques y conoce el trabajo municipal de crianza de peces amazónicos y capacitación a productores.</p></section>
+<section id="maqueta" class="viewer" aria-label="Maqueta interactiva"><div class="stage"><canvas id="scene" aria-label="Vista tridimensional esquemática de una piscigranja"></canvas><p class="caption">Maqueta esquemática · Sin escala</p></div><aside><h2>Explora la estructura</h2><p>Arrastra para girar o usa los controles.</p><div class="controls"><button data-move="left" aria-label="Girar a la izquierda">←</button><button data-move="right" aria-label="Girar a la derecha">→</button><button data-move="in" aria-label="Acercar">+</button><button data-move="out" aria-label="Alejar">−</button><button data-move="reset">Restablecer</button></div><div class="zones" aria-label="Zonas de la maqueta"><button data-zone="pond" aria-pressed="true">Estanques</button><button data-zone="house" aria-pressed="false">Área de reproducción</button><button data-zone="water" aria-pressed="false">Circulación del agua</button></div><div id="detail" aria-live="polite">El IIAP documenta estanques municipales destinados a la siembra de postlarvas de gamitana. La cantidad, forma y posición de los estanques de la maqueta son ilustrativas.</div><noscript>Activa JavaScript para explorar la maqueta 3D.</noscript></aside></section>
+<section id="fuentes" class="report"><p class="kicker">INVESTIGACIÓN DOCUMENTAL</p><h2>Qué sabemos de la piscigranja</h2><div class="grid">
+<article><h3>Gestión municipal</h3><p>El artículo 101 del Reglamento de Organización y Funciones asigna a la Subgerencia de Promoción Agropecuaria la administración de la piscigranja municipal y funciones de capacitación y asistencia técnica.</p><a href="https://cdn.www.gob.pe/uploads/document/file/2620537/ROF.pdf.pdf">Reglamento municipal · art. 101</a></article>
+<article><h3>Estanques y gamitana</h3><p>El IIAP documentó una transferencia histórica de 200 000 postlarvas de gamitana al municipio. El informe preveía sembrarlas en estanques municipales y distribuirlas posteriormente a comunidades cercanas.</p><a href="https://www.iiap.org.pe/Archivos/publicaciones/Publicacion_2266.pdf">Informe del IIAP · pág. 80</a></article>
+<article><h3>Capacitación en paco</h3><p>El 18 de junio de 2026, PRODUCE informó de una jornada con más de 50 acuicultores. El tramo práctico se realizó en la piscigranja, con actividades centradas en la cadena de valor del paco (<i>Piaractus brachypomus</i>).</p><a href="https://rnia.produce.gob.pe/productores-acuicolas-de-satipo-se-capacitan-en-transferencia-tecnologica-para-cadenas-acuicolas/">PRODUCE / RNIA · noticia de 2026</a></article>
+<article><h3>Ubicación histórica</h3><p>Un almanaque municipal de 2013 ubicaba la piscigranja en Portillo Bajo, km 5,5 de la carretera Marginal Satipo–Pichanaki. La referencia es histórica y queda pendiente verificar el acceso actual.</p><a href="https://es.scribd.com/document/240705049/Muni-Rio-Negro-Almanaque">Almanaque de 2013 · copia digital</a></article>
+<article><h3>Producción de alevinos</h3><p>En 2022, RCR Perú informó que el Centro de Reproducción de Peces Tropicales de la municipalidad capacitó a delegaciones del norte del Vraem y atribuyó a DEVIDA el financiamiento de su infraestructura.</p><a href="https://www.rcrperu.com/junin-capacitan-en-crianza-de-peces-tropicales-a-pobladores-de-mancomunidad-norvraem/">RCR Perú · reportaje de 2022</a></article>
+<article><h3>Alcance de la maqueta</h3><p>La representación propone un circuito de agua, estanques, senderos y un módulo de reproducción para explicar la función de cada zona. Las fuentes consultadas no permiten verificar dimensiones, capacidad, trazado hidráulico ni distribución actual.</p></article>
+</div></section></main><footer>Proyecto educativo independiente · Río Negro, Satipo, Junín</footer><script>
+'use strict';
+const canvas = document.querySelector('#scene');
+const ctx = canvas.getContext('2d');
+const faces = [];
+const markers = {
+  pond: { point: [-4, 0.4, 0], label: 'Estanques', detail: 'El IIAP documenta estanques municipales destinados a la siembra de postlarvas de gamitana. La cantidad, forma y posición de los estanques de la maqueta son ilustrativas.' },
+  house: { point: [6.5, 3.7, -4], label: 'Reproducción', detail: 'El módulo representa el trabajo de reproducción de peces tropicales y producción de alevinos. Su forma y ubicación son ilustrativas.' },
+  water: { point: [3.4, 0.4, 4.6], label: 'Circuito de agua', detail: 'Los canales ilustran cómo podría circular el agua entre los estanques. El trazado y el punto de descarga reales quedan por verificar.' }
+};
+const colors = {
+  ground: ['#648653','#3f5a3f','#344d37'],
+  soil: ['#b8ad78','#827853','#706446'],
+  water: ['#409e98','#2d7e79','#235e5a'],
+  wall: ['#e0d6aa','#b6aa82','#877d61'],
+  roof: ['#ca8050','#a45c41','#814232'],
+  path: ['#c9c098','#a49a72','#817653'],
+  trunk: ['#8a6449','#71513a','#513b2b'],
+  leaf: ['#79ae61','#4a8a57','#326741'],
+  leaf2: ['#56915a','#337653','#23543f']
+};
+function box(x, y, z, w, h, d, palette, group) {
+  const a = [x,y,z], b = [x+w,y,z], c = [x+w,y,z+d], e = [x,y,z+d];
+  const f = [x,y+h,z], g = [x+w,y+h,z], j = [x+w,y+h,z+d], k = [x,y+h,z+d];
+  const sides = [[f,g,j,k],[a,b,g,f],[b,c,j,g],[c,e,k,j],[e,a,f,k]];
+  sides.forEach((points,i) => faces.push({points, color: palette[[0,1,2,1,2][i]], group}));
+}
+box(-10,-1.45,-7,20,1.45,14,colors.ground);
+function pond(x,z,w,d) {
+  box(x,0,z,w,0.13,d,colors.soil,'pond');
+  box(x+.28,.14,z+.28,w-.56,.03,d-.56,colors.water,'pond');
+  for (let i=1;i<5;i++) {
+    box(x+.58,.175,z+d*i/5,w-1.16,.007,.024,['#75b9ac','#75b9ac','#75b9ac'],'pond');
+  }
+}
+pond(-8.6,-5.3,5.5,3.6);
+pond(-2.5,-5.3,5.2,3.6);
+pond(-8.6,-.7,5.5,4.1);
+pond(-2.5,-.7,5.2,4.1);
+box(-9,0,3.7,17,.06,.64,colors.path);
+box(3,0,-5.5,.55,.08,9.18,colors.path);
+box(3.12,.02,4.45,.52,.075,1.85,colors.water,'water');
+box(-8.8,.02,4.45,12.4,.075,.48,colors.water,'water');
+box(-9.5,.02,-5.3,.47,.075,10.25,colors.water,'water');
+box(-9.1,.02,-3.25,.7,.075,.22,colors.water,'water');
+box(-9.1,.02,1.4,.7,.075,.22,colors.water,'water');
+box(4.5,0,-5.5,4,2,3.3,colors.wall,'house');
+box(4.27,2,-5.73,4.46,.25,3.76,colors.roof,'house');
+box(4.64,2.25,-5.41,3.72,.28,3.12,colors.roof,'house');
+box(5.86,.06,-2.18,1.07,1.46,.045,colors.trunk,'house');
+box(7.19,.93,-2.18,.82,.58,.045,colors.water,'house');
+function tree(x,z,s,i) {
+  box(x-.10,0,z-.10,.2,s*.64,.2,colors.trunk);
+  box(x-s*.38,s*.46,z-s*.37,s*.76,s*.58,s*.74,i%2?colors.leaf:colors.leaf2);
+  box(x-s*.26,s*.99,z-s*.23,s*.52,s*.25,s*.47,colors.leaf);
+}
+[[-8.7,-6.1,1.2],[-6.5,-6.2,1.6],[-4.4,-6.25,1.2],[-2.1,-6.18,1.52],[.4,-6.1,1.3],[2.7,-6.15,1.55],[8.97,-5.7,1.28],[8.75,-1.2,1.55],[8.5,1.3,1.2],[7.1,5.4,1.55],[5.35,5.15,1.15],[-7.6,5.5,1.4],[-5.1,5.83,1.2],[-1.9,5.55,1.38],[.4,5.96,1.09]].forEach(([x,z,s],i)=>tree(x,z,s,i));
+const initial = {angle:-.56,zoom:1};
+let angle=initial.angle, zoom=initial.zoom, selected='pond', drag;
+function draw() {
+  if (!ctx) return;
+  const {width,height} = canvas.getBoundingClientRect();
+  if (!width || !height) return;
+  const ratio = Math.min(2,devicePixelRatio || 1);
+  const pixelWidth = Math.round(width*ratio), pixelHeight = Math.round(height*ratio);
+  if(canvas.width!==pixelWidth || canvas.height!==pixelHeight) {
+    canvas.width=pixelWidth;
+    canvas.height=pixelHeight;
+  }
+  ctx.setTransform(ratio,0,0,ratio,0,0);
+  ctx.clearRect(0,0,width,height);
+  const scale = Math.min(width/27,height/16.7)*zoom;
+  const co=Math.cos(angle), si=Math.sin(angle);
+  function project([x,y,z]) {
+    const depth=x*si+z*co;
+    return {x:width/2+(x*co-z*si)*scale, y:height*.51+(depth*.54-y*.84)*scale, depth:depth*.84+y*.54};
+  }
+  ctx.fillStyle='#06171055';
+  ctx.beginPath();
+  ctx.ellipse(width/2,height*.68,scale*10,scale*2.4,0,0,Math.PI*2);
+  ctx.fill();
+  const polygons=faces.map(face=>{
+    const points=face.points.map(project);
+    return {...face, points, depth:points.reduce((sum,point)=>sum+point.depth,0)/points.length};
+  }).filter(({points:[a,b,c]}) => (b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x)>0);
+  polygons.sort((a,b)=>a.depth-b.depth);
+  for(const face of polygons) {
+    ctx.beginPath();
+    face.points.forEach(({x,y},i)=> i ? ctx.lineTo(x,y) : ctx.moveTo(x,y));
+    ctx.closePath();
+    ctx.fillStyle=face.color;
+    ctx.fill();
+    ctx.lineWidth=.55;
+    ctx.strokeStyle=face.color;
+    ctx.stroke();
+  }
+  const marker=markers[selected];
+  const p=project(marker.point);
+  ctx.font='600 13px system-ui';
+  const labelWidth=ctx.measureText(marker.label).width+22;
+  const labelX=Math.max(6,Math.min(width-labelWidth-6,p.x-labelWidth/2));
+  const labelY=Math.max(7,p.y-47);
+  ctx.strokeStyle='#bcffd2';
+  ctx.lineWidth=1.4;
+  ctx.beginPath();
+  ctx.moveTo(labelX+labelWidth/2,labelY+25);
+  ctx.lineTo(p.x,p.y);
+  ctx.stroke();
+  ctx.fillStyle='#bcffd2';
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,4,0,Math.PI*2);
+  ctx.fill();
+  ctx.fillStyle='#0a211a';
+  ctx.fillRect(labelX,labelY,labelWidth,25);
+  ctx.fillStyle='#bcffd2';
+  ctx.fillText(marker.label,labelX+11,labelY+17);
+}
+function changeZoom(delta) { zoom=Math.max(.65,Math.min(2.05,zoom+delta)); }
+const moves={left:()=>angle-=.25,right:()=>angle+=.25,in:()=>changeZoom(.15),out:()=>changeZoom(-.15),reset:()=>({angle,zoom}=initial)};
+document.querySelectorAll('[data-move]').forEach(button=>button.addEventListener('click',()=>{
+  moves[button.dataset.move]();
+  draw();
+}));
+const zoneButtons=document.querySelectorAll('[data-zone]');
+zoneButtons.forEach(button=>button.addEventListener('click',()=>{
+  selected=button.dataset.zone;
+  zoneButtons.forEach(option=>option.setAttribute('aria-pressed',String(option===button)));
+  document.querySelector('#detail').textContent=markers[selected].detail;
+  draw();
+}));
+canvas.addEventListener('pointerdown',event=>{
+  if(drag || event.button!==0) return;
+  canvas.setPointerCapture(event.pointerId);
+  drag={id:event.pointerId,x:event.clientX};
+});
+canvas.addEventListener('pointermove',event=>{
+  if(drag?.id!==event.pointerId) return;
+  angle+=(event.clientX-drag.x)*.012;
+  drag.x=event.clientX;
+  draw();
+});
+canvas.addEventListener('lostpointercapture',event=>{ if(drag?.id===event.pointerId) drag=undefined; });
+if(ctx) {
+  new ResizeObserver(draw).observe(canvas);
+  draw();
+} else {
+  document.querySelector('.caption').textContent='Vista 3D no disponible en este navegador';
+}
+</script></body></html>
